@@ -82,8 +82,16 @@ tripleArea(5,5)
  areaOfCircle(3)
 
   /////////////////////////////////////
+  function inchesToCentimeters(inches) {
+    return inches*2.54 
+ } 
+inchesToCentimeters(5)
 
-
+///////////////////////////////////////////////
+function centimetersToInches(inches) {
+    return inches*0.3937008
+ }
+ centimetersToInches(10)
 
 
  /////////////////////////Question5:///////////////////////
@@ -123,9 +131,9 @@ square1(3)
 
 
  function capitalize(name) {
-    return name.toUpperCase()
-   }
-   capitalize("achref")
+    return name.charAt(0).toUpperCase()+ name.slice(1) 
+}
+   capitalize("achref") // Achref
 
 
 

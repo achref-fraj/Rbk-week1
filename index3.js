@@ -125,7 +125,7 @@ function isGreaterThan10(number) {
 
      function isEqualTo(num1, num2) { 
 
-         if (num1==num2)
+         if (num1===num2)
             return true 
         return false 
         
@@ -159,12 +159,19 @@ function isGreaterThan10(number) {
          //////////////////////////////////////////////
 
          function longerString(string1, string2) {
-          if (string1>string2)
-            return string1
-        return string2 
             
-
-         }
+            if (string1.length > string2.length) {
+                return string1
+            } 
+           
+            else if (string2.length > string1.length) {
+                return string2
+            } 
+          
+            else {
+                return "both"
+            }
+        }
          longerString("cat", "kitty")
 
           //////////////////////////////////////////////
@@ -176,7 +183,7 @@ function isGreaterThan10(number) {
              opposite(true)
 
 
-             //////////////////////////////////////////////
+             //////////////////***********ADVANCED******////////////////////////////
 
 
 
